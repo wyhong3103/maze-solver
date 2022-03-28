@@ -9,6 +9,7 @@ body{
 }
 
 .container{
+    margin-top : 20px;
     display : flex;
     flex-direction: row;;
     justify-content: center;
@@ -33,6 +34,7 @@ body{
 .side-bar{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap : 100px;
 }
 
@@ -71,4 +73,38 @@ button:hover{
 
 .path{
     background-color: gray;
+}
+
+.footer{
+    height: 70px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+span, a{
+    text-decoration: none;
+    color : rgb(122,122,122);
+    font-size: 25px;;
+}
+
+span{
+    color : black;
+}
+
+a:hover{
+    cursor: pointer;
+    color: black;
+}
+
+
+.github-img{
+    width: 40px;
+    height :40px;
 }
