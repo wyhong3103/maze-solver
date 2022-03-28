@@ -16,7 +16,7 @@ function cell_generator(size){
         let row_wall = [];
         for (let j = 0; j < size; j++){
             let cell = document.createElement("div");
-            cell.style.width = `${698/size}px`;
+            cell.style.width = `${649/size}px`;
             cell.style.height = cell.style.width;
             cell.classList.add("maze-cell");
             maze_container.appendChild(cell);
