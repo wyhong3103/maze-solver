@@ -1,4 +1,8 @@
 const maze_container = document.querySelector(".maze");
+const generate_btn = document.querySelector(".generate");
+const solve_btn = document.querySelector(".solve");
+const resize_btn = document.querySelector(".resize");
+const size_slider = document.querySelector("#size-slider");
 let vis = [];
 let grid = [];
 let wall = [];
@@ -172,4 +176,22 @@ function solve(){
     }
     fill_path(path);
 }
+
+function generate_onclick(){
+    vis = [];
+    grid = [];
+    wall = [];
+    maze_container.innerHTML = "";
+    cell_generator(size);
+    dfs(0,0);
+}
+
+function solve_onclick(){
+    solve();
+}
+
+
+generate_btn.addEventListener("click", generate_onclick);
+solve_btn.addEventListener("click", solve_onclick);
+
 cell_generator(size);
