@@ -6,11 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>Mazey</title>
 </head>
 <body>
-    <h1 class="title">MAZEY</h1>
+    <div class="header">
+        <h1 class="title">Welcome to Mazey, Adventurers!</h1>
+    </div>
     <div class="container">
+        <div class="side-bar">
+            <button class="generate">Generate</button>
+            <button class="solve">Solve</button>
+            <div class="resize-container">
+                <input type="range" min = 5 max=100>
+                <button class="resize">Resize</button>
+            </div>
+        </div>
         <div class="maze"></div>
     </div>
 </body>
