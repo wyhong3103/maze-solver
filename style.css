@@ -27,8 +27,8 @@ body{
 .maze{
     display : flex;
     flex-wrap: wrap;
-    width : 650px;
-    height : 650px;
+    width : 600px;
+    height : 600px;
     border : 1px solid black;
 }
 .side-bar{

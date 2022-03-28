@@ -7,7 +7,7 @@ const size_n = document.querySelector(".size-n");
 let vis = [];
 let grid = [];
 let wall = [];
-let size = 5;
+let size = 10;
 
 function cell_generator(size){    
     for(let i = 0; i < size; i++){
@@ -16,7 +16,7 @@ function cell_generator(size){
         let row_wall = [];
         for (let j = 0; j < size; j++){
             let cell = document.createElement("div");
-            cell.style.width = `${648/size}px`;
+            cell.style.width = `${598/size}px`;
             cell.style.height = cell.style.width;
             cell.classList.add("maze-cell");
             maze_container.appendChild(cell);
