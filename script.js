@@ -212,5 +212,5 @@ size_slider.addEventListener("change", update_size_n)
 resize_btn.addEventListener("click",resize_onclick)
 
 
-cell_generator(size);
+generate_onclick();
 update_size_n();
