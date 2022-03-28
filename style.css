@@ -1,0 +1,32 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    margin : 20px;
+}
+.container{
+    display : flex;
+    flex-direction: row;;
+}
+
+
+.maze{
+    display : flex;
+    flex-wrap: wrap;
+    width : 700px;
+    height : 700px;
+    margin : 0 auto;
+    border : 1px solid black;
+}
+
+.maze-cell {
+    border : 1px solid black;   
+}
+
+.path{
+    background-color: gray;
+}
