@@ -54,6 +54,11 @@ button:hover{
     height : 65px;
 }
 
+.size-n{
+    text-align: center;
+    font-size: 50px;
+}
+
 .resize-container{
     display: flex;
     flex-direction: column;

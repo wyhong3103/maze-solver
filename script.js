@@ -3,6 +3,7 @@ const generate_btn = document.querySelector(".generate");
 const solve_btn = document.querySelector(".solve");
 const resize_btn = document.querySelector(".resize");
 const size_slider = document.querySelector("#size-slider");
+const size_n = document.querySelector(".size-n");
 let vis = [];
 let grid = [];
 let wall = [];
@@ -190,8 +191,26 @@ function solve_onclick(){
     solve();
 }
 
+function update_size_n(){
+    size_n.textContent = size_slider.value;
+}
+
+function resize_onclick(){
+    vis = [];
+    grid = [];
+    wall = [];
+    size = size_slider.value;
+    maze_container.innerHTML = "";
+    cell_generator(size);
+    dfs(0,0);
+}
+
 
 generate_btn.addEventListener("click", generate_onclick);
 solve_btn.addEventListener("click", solve_onclick);
+size_slider.addEventListener("change", update_size_n)
+resize_btn.addEventListener("click",resize_onclick)
+
 
 cell_generator(size);
+update_size_n();
