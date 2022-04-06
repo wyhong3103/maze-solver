@@ -69,10 +69,11 @@ button:hover{
 
 .maze-cell {
     border : 1px solid black;   
+    transition: background-color 1s ease-in-out;
 }
 
 .path{
-    background-color: gray;
+    background-color :cornflowerblue;
 }
 
 .footer{
@@ -80,6 +81,11 @@ button:hover{
     display:flex;
     justify-content: center;
     align-items: flex-end;;
+}
+
+.start-cell, .end-cell{
+    position: relative;
+    background-color :darkslateblue;
 }
 
 a{

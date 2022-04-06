@@ -28,6 +28,8 @@ function cell_generator(size){
         grid.push(row_grid);
         wall.push(row_wall);
     }
+    grid[0][0].classList.add("start-cell");
+    grid[size-1][size-1].classList.add("end-cell");
 }
 
 function valid(i, j, carved){
